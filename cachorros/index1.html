@@ -1,0 +1,183 @@
+
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+    <meta charset="UTF-8">
+    <title>pagina1</title>
+    <link rel="stylesheet" href="CSS/estilo1.css">
+
+    <script type="text/javascript">
+        function validar()
+        {
+            var usuario = document.getElementById("usuario").value;
+            var Contraseña = document.getElementById("Contraseña").value; 
+
+            if(usuario == "jimmy" && Contraseña == "1234")
+            {
+                alert("Usuario y Contraseña validos");
+            }
+            else
+            {
+                alert("Verifique sus credenciales");
+            }
+        }
+
+
+    </script>
+
+</head>
+<body>
+
+    <header>
+        <p id="correo">email: tiendacachorros@yahoo.com</p>
+           <img class ="logo" src="multimedia/logo5.png">
+           <h1 id="ti-principal">Cachorros</h1>
+        <p id="frase">¡la mejor tienda de mascotas de la ciudad!</p>
+         <!--<nav class="menu">
+            <ul class="opciones">
+                
+                <li><a href="">inicio</a></li>
+                <li><a href="">quienes somos</a></li>
+                    <ul>
+                            <li><a href="">Submenu1</a></li>
+                            <li><a href="">Submenu2</a></li>
+                            <li><a href="">Submenu3</a></li>
+                            <li><a href="">Submenu4</a>
+                                <ul>
+                                    <li><a href="">Submenu1</a></li>
+                                    <li><a href="">Submenu2</a></li>
+                                    <li><a href="">Submenu3</a></li>
+                                    <li><a href="">Submenu4</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>   
+                <li><a href="">contacto</a></li>
+                <input type="text" placeholder="busqueda"><br>
+            </ul>
+         </nav> -->
+            <nav> <!-- Aqui estamos iniciando la nueva etiqueta nav -->
+                <ul class="nav">
+                    <li><a href="">Inicio</a></li>
+                    <li><a href="">Servicios</a>
+                        <ul class= "submenu">
+                            <li><a href="">Veterinaria</a></li>
+                            <li><a href="">venta de mascotas</a></li>
+                            <li><a href="">Accesorios</a></li>
+                            <li><a href="">Alimentos</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">Acerca de</a>
+                         <ul class= "submenu">
+                            <li><a href="">Visión</a></li>
+                            <li><a href="">Mision</a></li>
+                            
+                            </li>
+                        </ul>  
+                    
+                    <li><a href="">Contacto</a></li>
+                </ul>
+            </nav><!-- Aqui estamos cerrando la nueva etiqueta nav -->
+    </header>
+
+    <!--<div class="slide">
+            <div class="slide-inner">
+                <input class="slide-open" type="radio" id="slide-1" 
+                     name="slide" aria-hidden="true" hidden="" checked="checked">
+                <div class="slide-item">
+                    <img src="multimedia/slider4.jpg">
+                </div>
+                <input class="slide-open" type="radio" id="slide-2" 
+                     name="slide" aria-hidden="true" hidden="">
+                <div class="slide-item">
+                    <img src="multimedia/slider1.png">
+                </div>
+                <input class="slide-open" type="radio" id="slide-3" 
+                     name="slide" aria-hidden="true" hidden="">
+                <div class="slide-item">
+                    <img src="multimedia/mascotas-slider-scaled.jpg">
+                </div>
+                <label for="slide-3" class="slide-control prev control-1">‹</label>
+                <label for="slide-2" class="slide-control next control-1">›</label>
+                <label for="slide-1" class="slide-control prev control-2">‹</label>
+                <label for="slide-3" class="slide-control next control-2">›</label>
+                <label for="slide-2" class="slide-control prev control-3">‹</label>
+                <label for="slide-1" class="slide-control next control-3">›</label>
+                <ol class="slide-indicador">
+                    <li>
+                        <label for="slide-1" class="slide-circulo">•</label>
+                    </li>
+                    <li>
+                        <label for="slide-2" class="slide-circulo">•</label>
+                    </li>
+                    <li>
+                        <label for="slide-3" class="slide-circulo">•</label>
+                    </li>
+                </ol>
+            </div>
+        </div> -->
+       <div id="mapa">
+
+          <h4 id="avizo_mapa">Encuentranos aqui</h4><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31729.12171227276!2d-75.61254406407394!3d6.245246271830779!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e44299e0bf2f483%3A0xe99254b413bc4b5c!2sCentro%20Veterinario%20Conquistadores!5e0!3m2!1ses-419!2sco!4v1645055193499!5m2!1ses-419!2sco" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        
+        </div>
+
+        <div class="separador1"></div>
+            <img class="centro" src="multimedia/imagen8.jpg" alt="Imagen no se carga, ohhh" width="300" height="300">
+        <div class="separador1"></div>
+    
+        <div class="main">
+          <img src="multimedia/animal.png" alt="Imagen de prueba">
+         <div class="separador2"></div><br><br><br>
+       
+
+        <div id="login">
+          <form action="login.html" class="form1"  method="post" target="_blank">
+            <h2 class="form-tilte">Login</h2><br>
+              <p>
+                 <input type="text" class="redondeadonorelieve" placeholder="usuario" name="usuario" id="usuario"><br><br>
+              </p>
+              <p> 
+                 <input type="password"  class="redondeadonorelieve" placeholder="Contraseña" name="Contraseña" id="Contraseña"><br><br>
+              </p>
+              <p>
+                 <input class="boton" type="submit" id="btnVerifica" onclick="validar()" value="verificar">
+              </p>
+         </form>
+        </div>
+
+
+       <div class="separador1"></div>
+        <img src="multimedia/cachorro.png" alt="Imagen de prueba">
+       <div class="separador2"></div><br>
+         
+    <div id="animales">
+        <h3 class="subtitulo1">Cachorros</h4><br>
+        <a href="perros.html"> <input  class=boton1 type="button" value="Perros"></a><br>
+        <input class="boton1" type="submit" value="Gatos" ><br>
+        <input class="boton1" type="submit" value="Aves" ><br>
+        <input class="boton1" type="submit" value="Roedores" ><br>
+    </div><br>
+  
+    <div id="ventas">
+     <h4 id="Compras">Compras</h4><br>
+     <textarea name="" id="" cols="30" rows="10" placeholder="tu carrito de Compras esta vacio"></textarea><br>
+    </div> 
+  </div>
+    <p id="avizo">
+    TIENDA DE MASCOTAS – CACHORROS
+      Soluciones integrales para la atención de tus mascotas
+      marketing@tiendacachorros.com.co Copyright 2022
+     </p><br>   
+    <footer class="pie">
+             <h3 class="subtitulo">Redes</h2><br>
+            <button class="btn_tw" type="submit"><i class="fab fa-twitter"></i></button>
+            <button class="btn_fc"  type="submit"><i class="fab fa-facebook"></i></button>
+            <button class="btn_in"  type="submit"><i class="fab fa-instagram"></i></button>
+            
+        </footer>
+     <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+    
+</body>
+
+</html>
